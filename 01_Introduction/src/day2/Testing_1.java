@@ -20,5 +20,7 @@ public class Testing_1 {
 //		output
 		System.out.println("Price = " + price);
 		System.out.println("Expense = " + price * RATE);
+		
+		sc.close();
 	}
 }
