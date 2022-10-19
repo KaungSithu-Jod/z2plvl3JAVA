@@ -34,7 +34,6 @@ public class ArrayAssignment {
 		int bCindex = Arrays.binarySearch(brand, brandChosed);
 		int cpuCindex = Arrays.binarySearch(cpu, cpuChosed);
 		
-		scanner.nextLine();
 		System.out.println("Enter Dollar Exchange Rate: ");
 		float exR = scanner.nextFloat();
 		if (bCindex < 0 || cpuCindex < 0) {
