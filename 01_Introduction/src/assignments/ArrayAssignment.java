@@ -3,6 +3,8 @@ package assignments;
 import java.util.Arrays;
 import java.util.Scanner;
 
+
+// This assignment still has ERROR, currently fixing
 public class ArrayAssignment {
 
 	public static void main(String[] args) {
@@ -34,8 +36,10 @@ public class ArrayAssignment {
 		int bCindex = Arrays.binarySearch(brand, brandChosed);
 		int cpuCindex = Arrays.binarySearch(cpu, cpuChosed);
 		
+		System.out.println();
 		System.out.println("Enter Dollar Exchange Rate: ");
 		float exR = scanner.nextFloat();
+		
 		if (bCindex < 0 || cpuCindex < 0) {
 			System.out.println("Invalid Inputs");
 		} else {
@@ -43,5 +47,4 @@ public class ArrayAssignment {
 		}
 		scanner.close();
 	}
-
 }
