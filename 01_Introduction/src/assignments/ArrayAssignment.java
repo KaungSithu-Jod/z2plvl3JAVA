@@ -3,8 +3,6 @@ package assignments;
 import java.util.Arrays;
 import java.util.Scanner;
 
-
-// This assignment still has ERROR, currently fixing
 public class ArrayAssignment {
 
 	public static void main(String[] args) {
@@ -33,7 +31,15 @@ public class ArrayAssignment {
 		System.out.println("Enter cpu from " + Arrays.toString(cpu));
 		String cpuChosed = scanner.nextLine();
 		
-		int bCindex = Arrays.binarySearch(brand, brandChosed);
+		int bCindex = switch(brandChosed) {
+			case "lenovo" -> 0;
+			case "hp" -> 1;
+			case "samsung" -> 2;
+			case "acer" -> 3;
+			case "dell" -> 4;
+			case "asus" -> 5;
+			default -> -1;
+		};
 		int cpuCindex = Arrays.binarySearch(cpu, cpuChosed);
 		
 		System.out.println();
@@ -43,7 +49,7 @@ public class ArrayAssignment {
 		if (bCindex < 0 || cpuCindex < 0) {
 			System.out.println("Invalid Inputs");
 		} else {
-			System.out.print("Price of " + brandChosed + " with " + cpuChosed + " is : " + (data[cpuCindex][bCindex] * exR));
+			System.out.print("Price of " + brandChosed + " with " + cpuChosed + " is : " + (data[cpuCindex][bCindex] * exR + "MMK"));
 		}
 		scanner.close();
 	}
