@@ -12,6 +12,7 @@ public class StringAssignment3 {
 		int slashindex = nrcno.indexOf("/");
 		int openbrindex = nrcno.indexOf("(");
 		int closebrindex = nrcno.indexOf(")");
+		
 		if (slashindex >= 0 && openbrindex >= 0 && closebrindex >= 0 && closebrindex > openbrindex && openbrindex > slashindex) {
 			System.out.println("Township: " + nrcno.substring(slashindex+1,openbrindex));
 			System.out.println("Number: " + nrcno.substring(closebrindex+1));
