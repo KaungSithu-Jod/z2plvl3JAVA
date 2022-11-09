@@ -11,10 +11,10 @@ public class Person {
     }
 
     public Person(String name, String nrcno, String address, String phone) {
-        this.name = name;
-        this.nrcno = nrcno;
-        this.address = address;
-        this.phone = phone;
+        this.setName(name);
+        this.setNrcno(nrcno);
+        this.setAddress(address);
+        this.setPhone(phone);
     }
 
     // getter

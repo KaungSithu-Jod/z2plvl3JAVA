@@ -11,9 +11,9 @@ public class Teacher extends Person{
     
     public Teacher(String name, String nrcno, String address, String phone, String position, String department, String salary){
         super(name, nrcno, address, phone);
-        this.position = position;
-        this.department = department;
-        this.salary = salary;
+        this.setPosition(position);
+        this.setDepartment(department);
+        this.setSalary(salary);
     }
 
     // getter
